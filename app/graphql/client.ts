@@ -7,5 +7,3 @@ export const graphqlClient = new ApolloClient({
   ssrMode: true,
   link: new SchemaLink({ schema }),
 })
-
-// export default graphqlClient
