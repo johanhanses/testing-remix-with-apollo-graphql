@@ -1,6 +1,6 @@
 import type { IResolvers } from '@graphql-tools/utils'
 
-type Post = {
+export type Post = {
   id: string
   title: string
   createdAt: string
