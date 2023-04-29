@@ -23,13 +23,13 @@ export default function Posts() {
   const { posts } = useLoaderData<typeof loader>()
 
   return (
-    <div className="container">
+    <main>
       {posts.map((post) => (
         <article key={post.id}>
-          <p className="date">{post.createdAt}</p>
+          <p>{post.createdAt}</p>
           <p>{post.title}</p>
         </article>
       ))}
-    </div>
+    </main>
   )
 }
